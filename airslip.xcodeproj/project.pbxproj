@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004CBF2926E501330078907E /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CBF2826E501330078907E /* getData.swift */; };
+		00615C2926E591510048F209 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00615C2826E591500048F209 /* EditView.swift */; };
+		00615C2E26E5961D0048F209 /* countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00615C2D26E5961D0048F209 /* countries.swift */; };
 		2CA1325326E1948D000D19D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1325226E1948D000D19D3 /* AppDelegate.swift */; };
 		2CA1325526E1948D000D19D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1325426E1948D000D19D3 /* SceneDelegate.swift */; };
 		2CA1325726E1948D000D19D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1325626E1948D000D19D3 /* ContentView.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004CBF2826E501330078907E /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
+		00615C2826E591500048F209 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		00615C2D26E5961D0048F209 /* countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countries.swift; sourceTree = "<group>"; };
 		2CA1324F26E1948D000D19D3 /* airslip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airslip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA1325226E1948D000D19D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CA1325426E1948D000D19D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00615C2A26E595AE0048F209 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CA1325626E1948D000D19D3 /* ContentView.swift */,
+				00615C2826E591500048F209 /* EditView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00615C2B26E595C70048F209 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				004CBF2826E501330078907E /* getData.swift */,
+			);
+			name = Api;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		00615C2C26E595E90048F209 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				00615C2D26E5961D0048F209 /* countries.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		2CA1324626E1948C000D19D3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +133,11 @@
 		2CA1325126E1948D000D19D3 /* airslip */ = {
 			isa = PBXGroup;
 			children = (
+				00615C2A26E595AE0048F209 /* Views */,
+				00615C2B26E595C70048F209 /* Api */,
+				00615C2C26E595E90048F209 /* Data */,
 				2CA1325226E1948D000D19D3 /* AppDelegate.swift */,
 				2CA1325426E1948D000D19D3 /* SceneDelegate.swift */,
-				2CA1325626E1948D000D19D3 /* ContentView.swift */,
 				2CA1325B26E19498000D19D3 /* Assets.xcassets */,
 				2CA1326026E19498000D19D3 /* LaunchScreen.storyboard */,
 				2CA1326326E19498000D19D3 /* Info.plist */,
@@ -269,10 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004CBF2926E501330078907E /* getData.swift in Sources */,
 				2CA1325A26E1948E000D19D3 /* airslip.xcdatamodeld in Sources */,
 				2CA1325326E1948D000D19D3 /* AppDelegate.swift in Sources */,
 				2CA1325526E1948D000D19D3 /* SceneDelegate.swift in Sources */,
+				00615C2926E591510048F209 /* EditView.swift in Sources */,
 				2CA1325726E1948D000D19D3 /* ContentView.swift in Sources */,
+				00615C2E26E5961D0048F209 /* countries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
